@@ -1,0 +1,21 @@
+body.dash{background:var(--char5);min-height:100vh}
+.dash .nav{margin-bottom:0}
+.dash-main{padding:48px 32px 80px}
+.panel{background:#fff;border-radius:var(--radius);padding:36px;box-shadow:0 1px 0 #e7e7ee;max-width:720px}
+.panel h1,.dash-head h1{font-size:32px;letter-spacing:-.02em;margin-bottom:12px}
+.panel p{color:var(--char80);margin-bottom:20px}
+.panel code{background:var(--char5);padding:2px 6px;border-radius:6px}
+.panel pre{background:var(--char);color:#fff;padding:14px 16px;border-radius:10px;overflow:auto;margin-bottom:16px}
+.dash .btn{border:0;cursor:pointer;font-family:inherit}
+.dash-head{display:flex;align-items:baseline;gap:16px;margin-bottom:20px}
+.muted{color:var(--char80);font-size:14px}
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.tool{background:#fff;border-radius:var(--radius);padding:20px;box-shadow:0 1px 0 #e7e7ee;display:flex;flex-direction:column;gap:10px}
+.tool h3{font:700 15px/1.2 var(--mono)}
+.tool p.desc{color:var(--char80);font-size:14px}
+.tool label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:var(--char80)}
+.tool input,.tool select{font:14px var(--font);padding:8px 10px;border:1px solid #d6d6e0;border-radius:8px}
+.tool .run{align-self:flex-start;padding:9px 14px;font-size:14px}
+.tool .out{background:var(--char);color:#e6e6ee;border-radius:10px;padding:12px;font:12px/1.5 var(--mono);white-space:pre-wrap;word-break:break-word;max-height:360px;overflow:auto}
+.tool .out a{color:var(--accent)}
+.tool .out.err{background:#3a1212}

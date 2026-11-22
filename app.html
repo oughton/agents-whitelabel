@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dashboard.css">
+<script src="config.js" defer></script>
+<script src="dashboard.js" defer></script>
+</head>
+<body class="dash">
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./"><img class="logo-mark" src="assets/logo.svg" alt=""><span class="brand-name" data-brand>Acme Money</span><span class="brand-tag">Dashboard</span></a>
+    <nav class="links"><a href="./">Home</a></nav>
+    <button type="button" class="btn btn-sm" id="signout" hidden>Sign out</button>
+  </div>
+</header>
+<main class="dash-main wrap">
+  <section id="notice" class="panel" hidden></section>
+  <section id="signin" class="panel" hidden>
+    <p class="kicker dark">Web dashboard</p>
+    <h1>Talk to your bank data directly</h1>
+    <p>Sign in with OAuth (PKCE), connect a bank, then run the same read-only tools your AI app uses.</p>
+    <button type="button" class="btn btn-lg" id="signin-btn"><span class="spark">✳</span> Sign in</button>
+  </section>
+  <section id="tools" hidden>
+    <div class="dash-head"><h1>Tools</h1><span id="server-info" class="muted"></span></div>
+    <div id="tool-list" class="tool-grid"></div>
+  </section>
+  <p id="status" class="muted"></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acme Money for Agents · Ask your AI app about your money</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="description" content="Connect your bank once, then ask your AI app about balances, spending and transactions. Read only, built on regulated Open Banking.">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img class="logo-mark" src="assets/logo.svg" alt=""><span class="brand-name" data-brand>Acme Money</span><span class="brand-tag" data-brand-tag>for Agents</span></a>
+    <nav class="links"><a href="#how">How it works</a><a href="#safe">Security</a><a href="#faq">FAQ</a></nav>
+    <a class="btn btn-sm" href="#" data-add>Get started</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="top">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="kicker">Open Banking · Read only · For your AI app</p>
+        <h1>Ask your AI app<br>about <span class="grad">your money.</span></h1>
+        <p class="lead">Connect your bank once. Then ask your AI app where your money goes, which subscriptions you pay for, or how much you have across all your accounts.</p>
+        <div class="cta">
+          <a class="btn btn-lg" href="#" data-add><span class="spark">✳</span> Get started</a>
+          <a class="btn-link" href="#how">See how it works →</a>
+        </div>
+        <p class="fine">About two minutes · You'll need your banking app · Nothing to install</p>
+        <p class="fine">Works in Claude and Claude Code today. Want to try it in the browser? <a href="app.html">Open the web dashboard</a></p>
+      </div>
+
+      <div class="chat" aria-label="Example conversation with sample data">
+        <div class="chat-top"><span class="dots"><i></i><i></i><i></i></span><span class="chat-title">Your AI app</span><span class="sample">Sample data</span></div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input"><span id="chat-typing" class="typing-text"></span><span class="caret"></span><span class="send">↑</span></div>
+        <div class="chat-foot"><span>🔒 Read-only access · fictional example</span><button type="button" id="chat-toggle" class="mini">❚❚ Pause</button><button type="button" id="chat-replay" class="mini">↻ Replay</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="wrap grid3">
+      <div class="tile"><span class="ic">✳</span><div><h3>Your AI app</h3><p>It reads only what you connect, only when you ask.</p></div></div>
+      <div class="tile"><span class="ic">⇄</span><div><h3>Regulated Open Banking</h3><p>Bank-grade, FCA-regulated connections. No screen scraping.</p></div></div>
+      <div class="tile"><span class="ic">⌂</span><div><h3>Your bank</h3><p>You approve in your banking app. Your login never leaves your bank.</p></div></div>
+    </div>
+  </section>
+  </div>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <p class="kicker dark">Set up in a minute</p>
+      <h2>Connect. Add. <span class="grad-dark">Ask.</span></h2>
+      <div class="steps">
+        <div class="step">
+          <span class="n">1</span><h3>Add to your AI app</h3>
+          <p>Click <b>Get started</b>. Claude opens with the connector filled in. Click <b>Add</b>, then <b>Connect</b>.</p>
+          <div class="mock"><div class="mock-dialog"><b>Add custom connector</b><span class="mock-field" data-connector>Acme Money for Agents</span><span class="mock-btn">Add</span></div></div>
+        </div>
+        <div class="step">
+          <span class="n">2</span><h3>Connect your bank</h3>
+          <p>Sign in, pick your bank and approve in your banking app.</p>
+          <div class="mock"><div class="mock-banks">
+            <span><i class="bank-dot" style="background:#ff4f40">M</i>Monzo</span>
+            <span class="on"><i class="bank-dot" style="background:#191c1f">R</i>Revolut</span>
+            <span><i class="bank-dot" style="background:#00aeef">B</i>Barclays</span>
+            <span><i class="bank-dot" style="background:#db0011">H</i>HSBC</span>
+          </div></div>
+        </div>
+        <div class="step">
+          <span class="n">3</span><h3>Ask anything</h3>
+          <p>Balances, spending by category, subscriptions, trends. Across all your banks.</p>
+          <div class="mock"><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+      <div class="try">
+        <span class="ic sm">✳</span>
+        <p>Try asking <b>"Where did my money go this month?"</b>, <b>"Which subscriptions am I paying for?"</b> or <b>"How much do I have across all my accounts?"</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="safe">
+    <div class="wrap safe">
+      <div>
+        <p class="kicker">Safe by design</p>
+        <h2>Your data,<br>your rules.</h2>
+        <p class="lead">Built on regulated Open Banking, with privacy decisions made in the architecture, not in small print.</p>
+      </div>
+      <div class="safe-grid">
+        <div><h3>👁 Read only</h3><p>Accounts, balances and transactions. Nothing can move money.</p></div>
+        <div><h3>🔑 Your bank login stays at your bank</h3><p>You approve in your banking app. We never see your password.</p></div>
+        <div><h3>🗄 Nothing stored</h3><p>Bank data is fetched live when you ask, and never saved.</p></div>
+        <div><h3>🎭 Minimum shared</h3><p>Account numbers masked; spending sent as totals, not every transaction.</p></div>
+        <div><h3>✋ In control</h3><p>Remove a bank, sign out or delete everything, any time.</p></div>
+        <div><h3>🛡 Standard sign-in</h3><p>OAuth 2.1 with PKCE. Your AI app gets a short-lived key that opens only your data.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap code-sec">
+      <div>
+        <p class="kicker dark">For developers</p>
+        <h2>Using Claude Code?</h2>
+        <p class="lead dark">One command. Then type <code>/mcp</code> and sign in.</p>
+      </div>
+      <div class="cmd"><code id="cc-cmd">claude mcp add --transport http …</code><button type="button" class="mini light" id="copy-cmd">Copy</button></div>
+    </div>
+  </section>
+
+  <section class="section soft" id="faq">
+    <div class="wrap faq">
+      <h2>Questions</h2>
+      <details><summary>What is <span data-brand>Acme Money</span> for Agents?</summary><p>It lets you securely connect your UK bank accounts to your AI app using open banking. You can then ask it about your money, like how much you spent on groceries last month or which subscriptions you're paying for.</p></details>
+      <details><summary>How does it work?</summary><ol><li>Click <b>Get started</b>. Claude opens the "Add custom connector" dialog, already filled in. Click <b>Add</b>, then <b>Connect</b>.</li><li>Sign in or create an account, then connect your bank: pick it from the list and approve in your banking app.</li><li>Ask about your balances, spending by category, subscriptions… across all your connected banks.</li></ol></details>
+      <details><summary>Which AI apps does it work with?</summary><p>Claude (web, desktop and mobile) and Claude Code today. Any app that supports remote MCP servers with OAuth should work too.</p></details>
+      <details><summary>Nothing happens when I click "Get started"</summary><p>See Claude's guide to <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener">custom connectors</a>. On Claude Team and Enterprise plans only an Owner can add connectors. Ask your admin to open <a href="#" data-add-admin>this link</a> once; then everyone can click <b>Connect</b> in <a href="https://claude.ai/customize/connectors" target="_blank" rel="noopener">Customize → Connectors</a>.</p></details>
+      <details><summary>Which banks can I connect?</summary><p>Personal current accounts at UK banks, such as Barclays, HSBC, Lloyds, Monzo, Nationwide, NatWest, Revolut, Santander and TSB. Credit cards are not currently supported.</p></details>
+      <details><summary>Does my AI app see my bank password?</summary><p>No. You approve the connection in your banking app. Your login never reaches us or your AI app.</p></details>
+      <details><summary>Can it move money?</summary><p>No. Access is read-only: accounts, balances and transactions.</p></details>
+      <details><summary>How long does access last?</summary><p>Access lasts 90 days, then your bank asks you to approve again.</p></details>
+      <details><summary>What happens to my data once my AI app has it?</summary><p>When you ask a question, only the account data needed is fetched and shared into your conversation. From there it's handled under your AI provider's terms and your settings. AI answers can be wrong and are not financial advice.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="glow g3"></div>
+    <div class="wrap final-in">
+      <h2>Your money, in plain English.</h2>
+      <a class="btn btn-lg" href="#" data-add><span class="spark">✳</span> Get started</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand"><img class="logo-mark" src="assets/logo.svg" alt=""><span class="brand-name" data-brand>Acme Money</span></span>
+    <p>© <span data-company>Acme Ltd</span> <span id="year">2026</span> · <span class="powered">Open Banking powered by TrueLayer</span></p>
+  </div>
+</footer>
+</body>
+</html>
